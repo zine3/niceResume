@@ -19,7 +19,7 @@ const Navbar = () => {
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+            Zine Adjemi
           </span>
         </a>
 
@@ -32,20 +32,24 @@ const Navbar = () => {
               Skills
             </a>
             <a href="#projects" className="cursor-pointer">
-              Projects
+              Resume
             </a>
+            <a href="/zineadjemicv.pdf" target="_blank" rel="noopener noreferrer"
+  >Download RESUME</a>
           </div>
         </div>
 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
+            <a key={social.name} href={social.key} target="_blank" rel="noopener noreferrer">
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
-              width={24}
-              height={24}
+              width={36}
+              height={36}
             />
+            </a>
           ))}
         </div>
       </div>

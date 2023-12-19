@@ -24,7 +24,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            IT Support L2/L3 developper
           </h1>
         </motion.div>
 
@@ -33,12 +33,12 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Providing
+            I am
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              the best{" "}
+              Zine Adjemi {" "}
             </span>
-            project exprience
+            , IT support & fullstack Developer
           </span>
         </motion.div>
 
@@ -46,15 +46,16 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          As an L2/L3 Developer Support Agent at Airbus from July 2020 to May 2023, I spearheaded critical missions within the PLM/ELEC framework, focusing on data processing for the aircraft electrical harnesses.
+          My responsibilities included managing various aspects such as model modification, user support, task automation, bug resolution, and software version migration.
+          My expertise extends to the use of Agile Safe methodologies and various software applications, contributing to the success of projects at Airbus.
         </motion.p>
-        <motion.a
+        {/* <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Learn More!
-        </motion.a>
+        </motion.a> */}
       </div>
 
       <motion.div
@@ -62,11 +63,12 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/mainIconsdark.svg"
-          alt="work icons"
-          height={650}
-          width={650}
+          src="/swiss.svg"
+          alt="swiss icons"
+          height={200}
+          width={200}
         />
+
       </motion.div>
     </motion.div>
   );
