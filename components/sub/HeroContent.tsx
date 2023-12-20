@@ -37,8 +37,8 @@ const HeroContent = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
               Zine Adjemi {" "}
-            </span>
-            , IT support & fullstack Developer
+            , IT support & fullstack Developer {" "}
+          </span>
           </span>
         </motion.div>
 
@@ -63,15 +63,16 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/swiss.svg"
-          alt="swiss icons"
-          height={200}
-          width={200}
+          src="/zinepc.jpg"
+          alt="zine"
+          height={400}
+          width={300}
         />
 
       </motion.div>
     </motion.div>
   );
 };
+
 
 export default HeroContent;
