@@ -1,0 +1,11 @@
+/* SkillDataProvider.module.css */
+
+.skillItem img {
+  width: 100%;
+  height: auto;
+}
+
+.skillItem img.responsive {
+  width: 50%;
+  height: auto;
+}

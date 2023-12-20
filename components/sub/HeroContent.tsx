@@ -29,21 +29,17 @@ const HeroContent = () => {
         </motion.div>
 
         <motion.div
-          variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
-        >
-          <span>
-            I am
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              Zine Adjemi {" "}
-            , IT support & fullstack Developer {" "}
-          </span>
-          </span>
-        </motion.div>
+  variants={slideInFromLeft(0.8)}
+  className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[300px] w-auto h-auto"
+>
+  <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+    I am Zine Adjemi, IT support & fullstack Developer
+  </div>
+</motion.div>
+
 
         <motion.p
-          variants={slideInFromLeft(0.8)}
+          variants={slideInFromLeft(0.9)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
           As an L2/L3 Developer Support Agent at Airbus from July 2020 to May 2023, I spearheaded critical missions within the PLM/ELEC framework, focusing on data processing for the aircraft electrical harnesses.
@@ -59,15 +55,18 @@ const HeroContent = () => {
       </div>
 
       <motion.div
-        variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        variants={slideInFromRight(1)}
+        className="w-full h-full flex justify-end items-center"
       >
-        <Image
-          src="/zinepc.jpg"
+       <Image
+          src="/zinepc.webp"
           alt="zine"
-          height={400}
+          height={450}
           width={300}
+          style={{ width: "auto", height: "auto" }}  // Maintain aspect ratio
+          className="w-full object-contain"
         />
+
 
       </motion.div>
     </motion.div>

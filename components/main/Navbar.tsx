@@ -16,6 +16,7 @@ const Navbar = () => {
             width={70}
             height={70}
             className="cursor-pointer hover:animate-slowspin"
+            priority
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
@@ -40,14 +41,15 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
+          {Socials.map((social,index) => (
             <a key={social.name} href={social.key} target="_blank" rel="noopener noreferrer">
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
-              width={36}
-              height={36}
+              width={social.width}
+              height={social.height}
+              className="common-image-class"
             />
             </a>
           ))}
