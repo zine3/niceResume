@@ -1,14 +1,15 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
+import styles from "../../app/styles/styles.module.css";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="about-me">
+    <div className={`relative ${styles.heroContainer}`} id="about-me">
       <video
         autoPlay
         muted
         loop
-        className="absolute top-0 left-0 h-full w-full object-cover"
+        className={`absolute ${styles.video}`}  // Apply styles for video
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>

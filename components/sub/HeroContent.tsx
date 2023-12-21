@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import styles from "../../app/styles/styles.module.css"
 
 const HeroContent = () => {
   return (
@@ -18,19 +19,20 @@ const HeroContent = () => {
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
-        >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
-            IT Support L2/L3 developper
-          </h1>
-        </motion.div>
+      <motion.div
+      variants={slideInFromTop}
+      className="Welcome-box py-2 md:py-4 px-2 md:px-4 border border-[#7042f88b] opacity-90"
+    >
+      <SparklesIcon className="text-[#b49bff] mr-2 md:mr-4 h-5 w-5" />
+      <h1 className="Welcome-text text-xs md:text-base">
+        IT Support L2/L3 developer
+      </h1>
+    </motion.div>
+
 
         <motion.div
   variants={slideInFromLeft(0.8)}
-  className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[300px] w-auto h-auto"
+  className="flex flex-col gap-6 mt-6 text-4xl font-bold text-white max-w-[400px] w-auto h-auto"
 >
   <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
     I am Zine Adjemi, IT support & fullstack Developer
@@ -59,14 +61,13 @@ const HeroContent = () => {
         className="w-full h-full flex justify-end items-center"
       >
        <Image
-          src="/zinepc.webp"
-          alt="zine"
-          height={450}
-          width={300}
-          style={{ width: "auto", height: "auto" }}  // Maintain aspect ratio
-          className="w-full object-contain"
-        />
-
+        src="/zinepc.webp"
+        alt="zine"
+        height={450}
+        width={300}
+        style={{ width: "auto", height: "auto" }}
+        className="hidden md:block w-full h-auto object-contain"
+      />
 
       </motion.div>
     </motion.div>

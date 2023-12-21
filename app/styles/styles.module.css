@@ -9,3 +9,30 @@
   width: 50%;
   height: auto;
 }
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Apply responsive styles to the video */
+.video {
+  top: 0;
+  left: 30%;
+  height: 30%;
+  width: 30%;
+  object-fit: cover;
+}
+
+/* Media query for screens smaller than 600px (adjust as needed) */
+@media (max-width: 600px) {
+  .heroContainer {
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content to the top */
+  }
+
+  .video {
+   display: none;
+  }
+}
